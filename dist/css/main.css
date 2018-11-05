@@ -6449,7 +6449,7 @@ body {
   body .home-slider .owl-one .item img {
     width: 100%; }
   body .home-slider .owl-one .item .text-slider {
-    padding: 0 1rem;
+    padding: 0 2rem;
     color: #000;
     width: 100%;
     font-size: 1.5rem;
@@ -6529,56 +6529,32 @@ body {
         left: 50%;
         bottom: 2rem;
         transform: translateX(-50%) skewX(40deg); }
-    body .article-product .banner img {
+    body .article-product .banner {
       background: rgba(255, 255, 255, 0.5);
-      height: 100%;
+      height: 8rem;
       width: 100%;
-      background-size: 100%;
-      margin-bottom: 2rem; }
-    body .article-product .banner .py-first {
-      padding: 1.75rem 5rem; }
-    body .article-product .banner .py-last {
-      padding: 0.55rem 5rem; }
+      position: relative;
+      margin-bottom: 3rem; }
+      body .article-product .banner img {
+        position: absolute;
+        top: 50%;
+        padding: 0 4rem;
+        transform: translateY(-50%);
+        width: 100%;
+        background-size: 100%; }
     @media (min-width: 576px) {
-      body .article-product .banner img {
-        background: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        width: 100%;
-        background-size: 100%; }
-      body .article-product .banner .py-first {
-        padding: 2.55rem 5rem; }
-      body .article-product .banner .py-last {
-        padding: 1.75rem 5rem; } }
+      body .article-product .banner {
+        height: 10rem; }
+        body .article-product .banner img {
+          padding: 0 2rem; } }
     @media (min-width: 768px) {
-      body .article-product .banner img {
-        background: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        width: 100%;
-        background-size: 100%; }
-      body .article-product .banner .py-first {
-        padding: 3.55rem 2rem; }
-      body .article-product .banner .py-last {
-        padding: 2.55rem 2rem; } }
+      body .article-product .banner {
+        height: 10rem; }
+        body .article-product .banner img {
+          padding: 0 2rem; } }
     @media (min-width: 992px) {
-      body .article-product .banner img {
-        background: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        width: 100%;
-        background-size: 100%; }
-      body .article-product .banner .py-first {
-        padding: 4.5rem 5rem; }
-      body .article-product .banner .py-last {
-        padding: 3.55rem 5rem; } }
-    @media (min-width: 1200px) {
-      body .article-product .banner img {
-        background: rgba(255, 255, 255, 0.5);
-        height: 100%;
-        width: 100%;
-        background-size: 100%; }
-      body .article-product .banner .py-first {
-        padding: 5rem 5rem; }
-      body .article-product .banner .py-last {
-        padding: 3.55rem 5rem; } }
+      body .article-product .banner {
+        height: 12rem; } }
   body .article-sale .sale-banner img {
     width: 100%; }
   body .article-sale .sale-banner .text-item-sale {
