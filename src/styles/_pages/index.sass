@@ -1,0 +1,347 @@
+=before-line($phai : 0px,$vitri : 2rem,)
+	content: ''
+	display: block
+	position: absolute
+	width: 7rem
+	height: 0.3rem
+	background: $org
+	left: $phai
+	bottom: $vitri
+body
+	background: rgba(grey,0.1)
+	.home-slider
+		.owl-one
+			.item
+				img
+					width: 100%
+				.text-slider
+					padding: 0 1rem
+					color: #000
+					font-size: 1.5rem
+					font-weight: 400
+			.owl-nav
+				margin-top: -0.5rem
+				padding-bottom: 1rem
+				.owl-next,.owl-prev
+					width: 3rem
+					background: $sen
+					height: 3rem
+					span
+						color: #fff
+						line-height: 2rem
+						text-align: center
+						font-size: 2rem
+				&:hover
+					
+	+media-breakpoint-up(sm)
+		.home-slider
+			.owl-one
+				.item
+					img
+					.text-slider
+						font-size: 2rem
+				.owl-nav
+					.owl-next,.owl-prev
+
+
+	+media-breakpoint-up(md)
+		.home-slider
+			.owl-one
+				position: relative
+				.item
+					img
+					.text-slider
+						position: absolute
+						bottom: 5%
+						left: 50%
+						color: #fff
+						transform: translateX(-50%)
+						font-size: 1.8rem
+				.owl-dots
+					position: absolute
+					bottom: 2%
+					left: 50%
+					transform: translateX(-50%)
+					.owl-dot
+						span
+							-webkit-border-radius: 0
+							-moz-border-radius: 0
+							border-radius: 0
+							width: 0.8rem
+							height: 10px
+							margin-left: 0.3rem
+							margin-right: 0.3rem
+							background: none
+							border: 1px solid $org
+						&.active
+							span
+								background: $org
+						
+
+	+media-breakpoint-up(lg)
+		.home-slider
+				.owl-one
+					.item
+						img
+						.text-slider
+							bottom: 7%
+							color: #fff
+							font-size: 2.5rem
+					.owl-dots
+						.owl-dot
+							span
+								width: 1rem
+								height: 14px
+								margin-left: 0.3rem
+								margin-right: 0.3rem
+	.article-product
+		background: url('../img/banner-tire.png')
+		background-size: cover
+		background-repeat: no-repeat
+
+		h2
+			position: relative
+			text-align: center
+			text-transform: uppercase
+			font-size: 1.8rem
+			color: #fff
+			font-weight: 400
+			padding-top: 3rem
+			padding-bottom: 3rem
+			&:before
+				+before-line(50%,2rem)
+				transform: translateX(-50%) skewX(40deg)
+		.banner
+			img
+				background: rgba(#fff, 0.5)
+				height: 100%
+				width: 100%
+				
+				background-size: 100%
+				margin-bottom: 2rem
+			.py-first
+				padding: 1.75rem 5rem
+			.py-last
+				padding: 0.55rem 5rem
+		+media-breakpoint-up(sm)
+			.banner
+				img
+					background: rgba(#fff, 0.5)
+					height: 100%
+					width: 100%
+				
+					background-size: 100%
+				.py-first
+					padding: 2.55rem 5rem
+				.py-last
+					padding: 1.75rem 5rem
+		+media-breakpoint-up(md)
+			.banner
+				img
+					background: rgba(#fff, 0.5)
+					height: 100%
+					width: 100%
+					background-size: 100%
+				.py-first
+					padding: 3.55rem 2rem
+				.py-last
+					padding: 2.55rem 2rem
+		+media-breakpoint-up(lg)
+			.banner
+				img
+					background: rgba(#fff, 0.5)
+					height: 100%
+					width: 100%
+					
+					background-size: 100%
+				.py-first
+					padding: 4.5rem 5rem
+				.py-last
+					padding: 3.55rem 5rem
+		+media-breakpoint-up(xl)
+			.banner
+				img
+					background: rgba(#fff, 0.5)
+					height: 100%
+					width: 100%
+					
+					background-size: 100%
+				.py-first
+					padding: 5rem 5rem
+				.py-last
+					padding: 3.55rem 5rem
+	.article-sale
+		.sale-banner
+			img
+				width: 100%
+			.text-item-sale
+				padding: 0 1rem
+				h3
+					text-transform: uppercase
+					position: relative
+					font-size: 1.8rem
+					padding: 0 1rem
+					&:before
+						+before-line(50%,-1rem)
+						transform: translateX(-50%) skewX(40deg)
+				.text-detail-sale
+					padding: 0 1rem
+					font-size: 1.2rem
+					font-weight: 400
+				a
+					text-decoration: none
+					text-transform: uppercase
+					color: #fff
+					padding: 0 2rem
+					background: $org
+					padding: 0.5rem 2rem
+					border-radius: 0.3rem
+		+media-breakpoint-up(sm)
+			.sale-banner
+				img
+				.text-item-sale
+					h3
+						font-size: 1.8rem
+					.text-detail-sale
+						padding-bottom: 1rem
+					a
+						padding: 1rem 3rem
+						font-size: 1rem
+		+media-breakpoint-up(md)
+			.sale-banner
+				position: relative
+				img
+				.text-item-sale
+					position: absolute
+					left: 5%
+					top: 5%
+					h3
+						font-weight: 300
+						color: #fff
+						&:before
+							+before-line(16%,-1rem)
+							transform: translateX(-50%) skewX(40deg)
+					.text-detail-sale
+						color: #fff
+						font-weight: 200
+						width: 27rem
+						word-wrap: break-word
+					a
+						margin-left: 1rem
+						padding: 0.5rem 2rem
+		+media-breakpoint-up(lg)
+			.sale-banner
+				img
+				.text-item-sale
+					h3
+						font-weight: 300
+						font-size: 2.2rem
+						&:before
+							+before-line(12%,-1rem)
+					.text-detail-sale
+						font-weight: 200
+						font-size: 1.7rem
+						width: 40rem
+						word-wrap: break-word
+					a
+						padding: 0.75rem 2rem
+		+media-breakpoint-up(xl)
+			.sale-banner
+				img
+				.text-item-sale
+					
+					h3
+						font-weight: 300
+						font-size: 2.2rem
+						&:before
+							+before-line(12%,-1rem)
+					.text-detail-sale
+						font-weight: 200
+						font-size: 1.7rem
+						width: 40rem
+						word-wrap: break-word
+					a
+						padding: 0.75rem 2rem
+	.article-intro
+		padding: 2rem 1rem
+		.intro-text
+			background: #fff
+			padding: 0 1rem
+			
+			h3
+				font-weight: 500
+				position: relative
+				font-size: 1.8rem
+				padding: 1rem 0
+				text-transform: uppercase
+				&:before
+					+before-line(50%,0rem)
+					transform: translateX(-50%) skewX(40deg)
+			.text-detail
+			a
+				padding: 1rem 2rem
+				text-decoration: none
+				color: #fff
+				border-radius: 0.2rem
+			.search-button
+				background: $org
+				padding: 1 2rem
+				width: 15%
+
+			i
+				font-size: 2rem
+				color: $org
+		.intro-img
+			img
+				width: 100%
+	+media-breakpoint-up(sm)
+		.article-intro
+			.intro-text
+				h3
+					font-weight: 500
+				.text-detail
+					font-size: 1.2rem
+			.intro-img
+
+	+media-breakpoint-up(md)
+		.article-intro
+			.intro-text
+				h3
+					font-weight: 500
+				.text-detail
+					font-size: 1.2rem
+						
+	+media-breakpoint-up(lg)
+		.article-intro
+				position: relative
+				.intro-text
+					position: absolute
+					left: 0
+					height: 75%
+					width: 140%
+					z-index: 99
+					top: 50%
+					transform: translateY(-50%)
+					form
+						width: 80%
+						position: absolute
+						left: 50%
+						top: 150%
+						transform: translateX(-50%)
+					h3
+						font-weight: 500
+						&:before
+							+before-line(12%,0rem)
+					.text-detail
+						font-size: 0.8rem
+						font-weight: 300
+						width: 28rem
+						word-wrap: break-word
+					i
+						position: absolute
+						right: 2rem
+						top: 50%
+						transform: translateY(-50%)
+				.intro-img
+					img
+						width: 100%

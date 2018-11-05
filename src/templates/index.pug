@@ -1,0 +1,97 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home-slider
+		.owl-one.owl-carousel.owl-theme
+			.item
+				img(src="./img/slider-img-1.png", alt="slider-1").img-fluid
+				p.pt-4.text-slider.text-center.text-sm-center.text-md-center.text-lg-center Trải nghiệm vượt trội cùng Tutto
+			.item
+				img(src="./img/slider-img-2.png", alt="slider-2").img-fluid
+				
+			.item
+				img(src="./img/slider-img-3.png", alt="slider-3").img-fluid
+				p.pt-4.text-slider.text-center.text-sm-center.text-md-center.text-lg-center Trải nghiệm vượt trội cùng Tutto
+			.item
+				img(src="./img/slider-img-4.png", alt="slider-4").img-fluid
+				p.pt-4.text-slider.text-center.text-sm-center.text-md-center.text-lg-center Trải nghiệm vượt trội cùng Tutto
+	section.article-product
+		.container
+			.row
+				.col
+					h2 sản phẩm nổi bật
+			.row
+				.col-sm-6.col-md-4.col-lg-4
+					a(href='')
+						.banner
+							img(src="./img/product-img-1.png", alt="product-img-1").img-fluid.py-first
+				.col-sm-6.col-md-4.col-lg-4
+					a(href='')
+						.banner
+							img(src="./img/product-img-2.png", alt="product-img-2").img-fluid.py-last
+				.col-sm-6.col-md-4.col-lg-4
+					a(href='')
+						.banner
+							img(src="./img/product-img-3.png", alt="product-img-3").img-fluid.py-last
+	section.article-sale
+		.container
+			.row.pt-5
+				.col
+					.sale-banner
+						img(src="./img/sale-banner.png", alt="sale-banner").img-fluid
+						.text-item-sale.pt-3.text-center.text-sm-center.text-md-left.text-lg-left
+							h3 Lorem ipsum dolor sit amet
+							p.text-detail-sale.pt-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus possimus sapiente officia odio molestiae cumque
+							p
+								a(href='') Watch more
+	section.article-intro
+		.container
+			.row.pt-3
+				.col-sm-1.col-md-2.col-lg-1.d-none.d-sm-none.d-md-block.d-lg-block.d-xl-block
+					.img-cover
+						img(src="./img/left-tire.png", alt="left-tire").img-fluid
+				.col
+					.row.text-center.text-sm-center.text-md-left.text-lg-left
+						.col-sm-12.col-md-12.col-lg-3
+							.intro-text
+								h3 giới thiệu
+								p.text-detail.pt-1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laudantium labore ipsum molestiae odit reprehenderit animi. Magnam a voluptatum ducimus ex quo
+								p
+									a(href='')
+										i.fa.fa-arrow-right
+						.col-sm-12.col-md-12.col-lg-8
+							.intro-img
+								img(src="./img/intro-img-1.png", alt="").img-fluid
+					.row.pt-5.text-center.text-sm-center.text-md-left.text-lg-left
+						.col-sm-12.col-md-12.col-lg-3
+							.intro-text
+								h3 tìm lớp xe phù hợp
+								p
+									form
+										.form-group
+											label(for='exampleFormControlSelect1')
+											select#exampleFormControlSelect1.form-control.mb-3
+												option Chọn loại
+												option 1
+												option 2
+											select#exampleFormControlSelect1.form-control.mb-3
+												option Chọn mẫu xe
+												option 1
+												option 2
+											select#exampleFormControlSelect1.form-control.mb-3
+												option Chọn kích thước
+												option 1
+												option 2
+								p
+									a(href='')
+										i.fa.fa-arrow-right
+								p.py-3
+									a(href='').search-button Search
+						.col-sm-12.col-md-12.col-lg-8
+							.intro-img
+								img(src="./img/intro-img-2.png", alt="").img-fluid

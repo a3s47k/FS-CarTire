@@ -1,0 +1,149 @@
+
+html, body
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+	height: 100%
+	width: 100%
+header
+	background: #fff
+	.navbar
+		.navbar-brand
+			img
+				width: 4.5rem
+				height: 4.5rem
+		.navbar-nav
+			.nav-item
+				text-align: center
+				padding: 0 0.5rem
+				.nav-link
+					font-weight: 400
+					text-transform: uppercase
+					color: #000
+					font-size: 1.2rem
+				&:hover
+					background: rgba(#000,0.4)
+					.nav-link
+						color: #fff
+				&:nth-child(n + 8)
+					background: none
+					display: flex
+					justify-content: center
+					text-align: center
+					.nav-link
+						color: #000
+				&:nth-child(8)
+					border-top: 0.5px solid #a7a6a6
+					.nav-link
+						img
+							width: 64px
+							height: auto
+				&:nth-child(9)
+					border-bottom: 0.5px solid #a7a6a6
+					.nav-link
+						img
+							width: 64px
+							height: auto
+				&:nth-child(10)
+					.nav-link
+						i
+							font-size: 2rem
++media-breakpoint-up(sm)
+	header
+		.navbar
+			.navbar-brand
+				img
+					width: 4.5rem
+					height: 4.5rem
+			.navbar-nav
+				.nav-item
+					.nav-link
+						font-size: 1.3rem
++media-breakpoint-up(md)
+	header
+		.navbar
+			.navbar-nav
+				.nav-item
+					padding: 0.5rem 0.5rem
+					.nav-link
+						font-size: 1.1rem
++media-breakpoint-up(lg)
+	header
+		min-height: 10vh
+		.navbar
+			position: relative
+			.navbar-brand
+				position: absolute
+				top: 15%
+				z-index: 99
+				img
+					padding: 1rem 1rem
+					background: #fff
+					left: 0
+					width: 5.8rem
+					height: 5.8rem
+					border-radius: 0.2rem
+					
+			.navbar-nav
+				top: 105%
+				position: absolute
+				right: 0
+
+				.nav-item
+					padding: 0 0.15rem
+					&:hover
+						background: none
+						.nav-link
+							color: grey
+					&:nth-child(8)
+						border-top: none
+						position: relative
+						&:before
+							
+							content: ''
+							display: block
+							position: absolute
+							width: 1px
+							height: 1.2rem
+							left: 5px
+							background: #a7a6a6
+							top: 50%
+							transform: translateY(-50%)
+						.nav-link
+							img
+								width: 16px
+					&:nth-child(9)
+						border-bottom: none
+						position: relative
+						&:before
+							content: ''
+							display: block
+							position: absolute
+							width: 1px
+							height: 1.2rem
+							right: 5px
+							top: 50%
+							transform: translateY(-50%)
+							background: #a7a6a6
+						.nav-link
+							img
+								width: 16px
+					&:nth-child(10)
+						.nav-link
+							i
+								font-size: 1rem
+					.nav-link
+						font-size: 1rem
+						font-weight: 500
++media-breakpoint-up(xl)
+	header
+		.navbar
+			.navbar-brand
+				img
+					padding: 1rem 1rem
+					background: #fff
+					left: 0
+					width: 6.3rem
+					height: 6.3rem
+			.navbar-nav
+				.nav-item
+					padding: 0 0.5rem
