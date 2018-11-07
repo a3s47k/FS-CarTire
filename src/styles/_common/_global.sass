@@ -147,3 +147,133 @@ header
 			.navbar-nav
 				.nav-item
 					padding: 0 0.5rem
+footer
+	background: url('../img/footer-bg.png')
+	background-size: cover
+	background-repeat: no-repeat
+	min-height: 20vh
+	.head-footer
+		ul
+			list-style-type: none
+			display: flex
+			width: 100%
+			padding: 0 0
+			line-height: 2rem
+			li
+				padding: 0 2rem
+				color: #fff
+				.text-footer-1
+					font-weight: 200
+	.head-footer-2
+		position: relative
+		padding-bottom: 5rem
+		ul
+			padding: 0 0
+			list-style-type: none
+		form
+			.form-group
+				input
+					background: none
+					outline: 0
+					border: none
+					border-radius: 0
+					border-bottom: 1px solid #ced4da
+					color: #fff
+				.input-group
+					padding: 0 3rem
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					bottom: 4rem
+					.input-group-append
+						
+						.btn
+							position: absolute
+							left: 50%
+							transform: translateX(-50%)
+							bottom: -5rem
+							background: $org
+							color: #fff
+							padding: 0.5rem 3rem
+	.dash
+		border: none
+		border-top: 2px dashed #322f32
+		background: #ced4da
+		height: 0
+		transform: skewX(30deg)
+	.text-address
+		ul
+			list-style-type: none
+			
+			li
+				color: #989898
+				font-size: 1rem
+				font-weight: 300
+				&:nth-child(1)
+					padding-bottom: 1rem
+					color: #fff
+					font-weight: 400
+					font-size: 1.1rem
+					text-transform: uppercase
+	.footer-link
+		ul
+			list-style-type: none
+			padding: 0 0
+			li
+				color: #989898
+				font-size: 1.2rem
+				font-weight: 300
+				&:nth-child(1)
+					padding-bottom: 1rem
+					color: #fff
+					font-weight: 400
+					font-size: 1.1rem
+					text-transform: uppercase
+	+media-breakpoint-up(sm)
+		.text-address
+			ul
+				li
+					&:nth-child(1)
+		.footer-link
+			ul
+				li
+					&:nth-child(1)
+	+media-breakpoint-up(md)
+		.text-address
+			ul
+				li
+					&:nth-child(1)
+		.footer-link
+			ul
+				li
+					&:nth-child(1)
+	+media-breakpoint-up(lg)
+		.head-footer
+			ul
+				li
+					padding: 0 0
+		.head-footer-2
+			position: relative
+			ul
+			form
+				.form-group
+					.input-group
+						bottom: 2rem
+						.input-group-append
+							.btn
+								position: absolute
+								bottom: 0
+								color: #fff
+								padding: 0.5rem 3rem
+
+		.text-address
+			ul
+				li
+					font-size: 0.9rem
+					&:nth-child(1)
+		.footer-link
+			ul
+				li
+					font-size: 0.9rem
+					&:nth-child(1)
+	+media-breakpoint-up(xl)

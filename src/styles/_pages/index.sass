@@ -51,12 +51,17 @@ body
 					img
 					.text-slider
 						position: absolute
-						bottom: 5%
+						background: linear-gradient(0deg, rgba(#000, 0.5), rgba(#fff, 0))
 						left: 50%
+						bottom: -2rem
+						height: 45%
+						width: 100%
 						color: #fff
 						transform: translateX(-50%)
+						
 						font-size: 1.8rem
 				.owl-dots
+					
 					position: absolute
 					bottom: 2%
 					left: 50%
@@ -83,9 +88,12 @@ body
 					.item
 						img
 						.text-slider
-							bottom: 7%
+							bottom: -2rem
+							height: 35%
+							width: 100%
 							color: #fff
 							font-size: 2.5rem
+							
 					.owl-dots
 						.owl-dot
 							span
@@ -110,7 +118,7 @@ body
 			&:before
 				+before-line(50%,2rem)
 				transform: translateX(-50%) skewX(40deg)
-		.banner
+		.item
 			background: rgba(#fff, 0.5)
 			height: 8rem
 			width: 100%
@@ -122,25 +130,28 @@ body
 				padding: 0 4rem
 				transform: translateY(-50%)
 				width: 100%
-				
-				background-size: 100%
 			
 		+media-breakpoint-up(sm)
 			h2
-			.banner
+			.item
+				position: 
+				left: 50%
 				height: 10rem
 				img
 					padding: 0 2rem
 		+media-breakpoint-up(md)
 			h2
-			.banner
-				height: 10rem
+			.item
+				height: 12rem
+				width: 12rem
 				img
 					padding: 0 2rem
 		+media-breakpoint-up(lg)
 			h2
-			.banner
+			.item
+				width: 17rem
 				height: 12rem
+				img
 
 
 	.article-sale
@@ -148,17 +159,17 @@ body
 			img
 				width: 100%
 			.text-item-sale
-				padding: 0 1rem
+				padding: 0 2rem
 				h3
 					text-transform: uppercase
 					position: relative
 					font-size: 1.8rem
-					padding: 0 1rem
+
 					&:before
 						+before-line(50%,-1rem)
 						transform: translateX(-50%) skewX(40deg)
 				.text-detail-sale
-					padding: 0 1rem
+					padding: 1.5rem 1.5rem
 					font-size: 1.2rem
 					font-weight: 400
 				a
@@ -192,15 +203,15 @@ body
 						font-weight: 300
 						color: #fff
 						&:before
-							+before-line(16%,-1rem)
+							+before-line(14%,-1rem)
 							transform: translateX(-50%) skewX(40deg)
 					.text-detail-sale
 						color: #fff
+						padding: 0 0
 						font-weight: 200
-						width: 27rem
+						width: 23rem
 						word-wrap: break-word
 					a
-						margin-left: 1rem
 						padding: 0.5rem 2rem
 		+media-breakpoint-up(lg)
 			.sale-banner
@@ -210,11 +221,12 @@ body
 						font-weight: 300
 						font-size: 2.2rem
 						&:before
-							+before-line(12%,-1rem)
+							+before-line(10%,-1rem)
 					.text-detail-sale
 						font-weight: 200
-						font-size: 1.7rem
-						width: 40rem
+						font-size: 1.5rem
+						width: 38rem
+						padding-bottom: 1rem
 						word-wrap: break-word
 					a
 						padding: 0.75rem 2rem
@@ -227,19 +239,21 @@ body
 						font-weight: 300
 						font-size: 2.2rem
 						&:before
-							+before-line(12%,-1rem)
+							+before-line(10%,-1rem)
 					.text-detail-sale
 						font-weight: 200
 						font-size: 1.7rem
 						width: 40rem
+						padding-bottom: 1rem
 						word-wrap: break-word
 					a
 						padding: 0.75rem 2rem
 	.article-intro
 		padding: 2rem 1rem
 		.intro-text
+			order: 2
 			background: #fff
-			padding: 0 1rem
+			padding: 2rem 1rem
 			
 			h3
 				font-weight: 500
@@ -251,19 +265,21 @@ body
 					+before-line(50%,0rem)
 					transform: translateX(-50%) skewX(40deg)
 			.text-detail
-			a
-				padding: 1rem 2rem
+				padding: 0 1rem
+			.search-button
+				background: $org
+				
+				padding: 0.6rem 2rem
 				text-decoration: none
 				color: #fff
 				border-radius: 0.2rem
-			.search-button
-				background: $org
-				padding: 1 2rem
-
+				
 			i
 				font-size: 2rem
 				color: $org
+				margin-bottom: 1rem
 		.intro-img
+			order: 1
 			img
 				width: 100%
 	+media-breakpoint-up(sm)
@@ -274,9 +290,10 @@ body
 					font-weight: 500
 				.text-detail
 					font-size: 1.2rem
+					padding: 0 3rem
+					
 				i
-					padding-bottom: 1rem
-			.intro-img
+					font-size: 3rem
 
 	+media-breakpoint-up(md)
 		.article-intro
@@ -289,40 +306,169 @@ body
 						
 	+media-breakpoint-up(lg)
 		.article-intro
-				position: relative
-				.intro-text
-					position: absolute
-					left: 0
-					height: 75%
-					width: 35rem
-					z-index: 99
-					top: 50%
+			position: relative
+			.intro-text
+				position: absolute
+				left: 0
+				height: 75%
+				width: 35rem
+				z-index: 99
+				top: 50%
+				text-align: left
+				transform: translateY(-50%)
+				form
+					width: 80%
+					.form-group
+						margin-top: -1.1rem
+						.form-control
+							margin-top: -0.4rem
+				h3
+					font-weight: 500
 					text-align: left
+					&:before
+						+before-line(12%,0rem)
+				.text-detail
+					font-weight: 100
+					font-size: 1rem
+					font-weight: 300
+					width: 25rem
+					padding: 0 0
+					word-wrap: break-word
+				i
+					position: absolute
+					right: 2rem
+					top: 50%
 					transform: translateY(-50%)
-					form
-						width: 80%
-					h3
-						font-weight: 500
-						text-align: left
-						&:before
-							+before-line(12%,0rem)
-					.text-detail
-						font-weight: 100
-						font-size: 1rem
-						font-weight: 300
-						width: 25rem
-						word-wrap: break-word
-					i
-						position: absolute
-						right: 2rem
-						top: 50%
-						transform: translateY(-50%)
-					.search-button
-						text-align: left
-						position: absolute
-						bottom: 1rem
-						padding: 0.5rem 3rem
-				.intro-img
-					img
-						width: 100%
-						
+				
+				.search-button
+					text-align: left
+					position: absolute
+					bottom: 0.5rem
+					padding: 0.5rem 3rem
+			.intro-img
+				img
+					width: 100%
+	+media-breakpoint-up(xl)
+		.article-intro
+			.intro-text
+				width: 40rem
+				h3
+
+					&:before
+						+before-line(10%,0rem)
+				form
+					width: 80%
+					.form-group
+						margin: 0
+						.form-control
+							margin: 0
+			.intro-img
+				img
+	.article-news
+		background: url('../img/news-bg.png')
+		background-size: cover
+		background-repeat: no-repeat
+		h3
+			text-align: center
+			font-weight: 500
+			position: relative
+			font-size: 1.8rem
+			padding: 1rem 0
+			text-transform: uppercase
+			&:before
+				+before-line(50%,0rem)
+				transform: translateX(-50%) skewX(40deg)
+		.item
+			h4
+				padding: 1rem 0
+				font-weight: 400
+				text-align: center
+				font-size: 1.5rem
+			img
+			
+				width: 100%
+		.item-2
+			
+			img
+			
+				width: 100%
+		.text-box
+			background: #fff
+			margin-bottom: 1rem
+			padding-bottom: 1rem
+			display: block
+
+			h4
+				text-transform: uppercase
+				font-size: 1.2rem
+				padding: 1rem
+			.repaird-text
+				padding: 0 2rem
+				word-wrap: break-word
+			a
+				text-transform: uppercase
+				text-decoration: none
+				color: $org
+	+media-breakpoint-up(sm)
+		.article-news
+			h3
+			.item
+				h4
+				img
+			.item-2
+				img
+			.text-box
+				padding-bottom: 0
+				height: 95%
+				h4
+				.repaird-text
+				a
+	+media-breakpoint-up(md)
+		.article-news
+			h3
+			.item
+				h4
+				img
+			.item-2
+				padding-bottom: 1rem
+				img
+			.text-box
+				height: 95%
+				h4
+				.repaird-text
+				a
+	+media-breakpoint-up(lg)
+		.article-news
+			position: relative
+			h3
+				
+			.item
+				position: relative
+				h4
+					position: absolute
+					left: 2rem
+					bottom: 0
+					font-size: 1.8rem
+					color: #fff
+				img
+					
+					width: 100%
+			.item-2
+				padding-bottom: 0
+				
+				img
+					padding-bottom: 0.3rem
+					width: 100%
+			.text-box
+				position: relative
+				height: 98%
+				margin-bottom: 0 
+				h4
+					font-size: 1.1rem
+					padding: 0.5rem 1rem
+				.repaird-text
+					padding: 0 1rem
+				a
+					position: absolute
+					right: 1rem
+					bottom: 1.1rem
