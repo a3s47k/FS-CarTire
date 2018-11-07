@@ -6536,7 +6536,7 @@ footer {
     width: auto; } }
 
 body {
-  background: rgba(128, 128, 128, 0.1); }
+  background: #fff; }
   body .home-slider .owl-one .item img {
     width: 100%; }
   body .home-slider .owl-one .item .text-slider {
